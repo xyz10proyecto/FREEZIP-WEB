@@ -153,14 +153,14 @@ body {
   z-index: 0;
 }
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 90px 24px 80px;
+  padding: 110px 24px 80px;
 }
 .hero::after {
   content: '';
@@ -370,6 +370,35 @@ body {
   background: transparent;
 }
 .btn-outline:hover { background: rgba(41,171,226,0.08); }
+
+/* Hero badges */
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+  max-width: 500px;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 50px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(4px);
+  transition: border-color 0.2s, color 0.2s;
+}
+.hero-badge:hover {
+  border-color: rgba(41,171,226,0.3);
+  color: var(--text);
+}
+.hero-badge svg { opacity: 0.7; flex-shrink: 0; }
 
 .hero-scroll {
   position: absolute;
