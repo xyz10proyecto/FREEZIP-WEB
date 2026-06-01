@@ -384,21 +384,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 7px 16px;
-  border-radius: 50px;
   font-size: 0.78rem;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text-muted);
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  backdrop-filter: blur(4px);
-  transition: border-color 0.2s, color 0.2s;
 }
-.hero-badge:hover {
-  border-color: rgba(41,171,226,0.3);
-  color: var(--text);
-}
-.hero-badge svg { opacity: 0.7; flex-shrink: 0; }
+.hero-badge svg { opacity: 0.5; flex-shrink: 0; }
 
 .hero-scroll {
   position: absolute;
