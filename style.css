@@ -12,7 +12,7 @@
   --radius: 16px;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; max-width: 100%; overflow-x: hidden; }
 
 /* ─── STAR TRAIL CURSOR ─── */
 #star-trail-canvas {
@@ -720,7 +720,7 @@ body {
   color: var(--text);
 }
 .about-text { display: flex; flex-direction: column; gap: 16px; }
-.about-text h2 { font-size: clamp(1rem, 2.2vw, 1.6rem); font-weight: 700; white-space: nowrap; }
+.about-text h2 { font-size: clamp(1rem, 2.2vw, 1.6rem); font-weight: 700; }
 .about-text p { color: var(--text-muted); font-size: 0.95rem; }
 .about-stats {
   display: flex;
