@@ -160,7 +160,7 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 110px 24px 80px;
+  padding: 110px 24px 60px;
 }
 .hero::after {
   content: '';
@@ -424,7 +424,7 @@ body {
 
 
 /* ─── SECTIONS ─── */
-.section { padding: 72px 24px; position: relative; }
+.section { padding: 72px 24px; position: relative; scroll-margin-top: 80px; }
 
 /* Fusión de fondos entre secciones */
 .section-dark {
