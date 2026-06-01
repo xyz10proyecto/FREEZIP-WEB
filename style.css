@@ -908,8 +908,8 @@ body {
 
   /* Section tags */
   .section-tag { font-size: 0.7rem; letter-spacing: 1px; padding: 6px 12px; }
-  .section-tag-android { font-size: 2.4rem; padding: 18px 48px; }
-  .section-tag-pro { font-size: 2.4rem; padding: 18px 48px; }
+  .section-tag-android { font-size: 1.6rem; padding: 13px 32px; }
+  .section-tag-pro { font-size: 1.6rem; padding: 13px 32px; }
 
   /* Footer */
   .footer-inner { flex-direction: column; align-items: center; text-align: center; }
