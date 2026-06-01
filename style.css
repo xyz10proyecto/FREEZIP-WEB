@@ -915,3 +915,224 @@ body {
   /* Footer */
   .footer-inner { flex-direction: column; align-items: center; text-align: center; }
 }
+
+/* =====================
+   BOTÓN VER MÁS
+   ===================== */
+.btn-ver-mas {
+  margin-top: 16px;
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+.btn-ver-mas:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(255,255,255,0.3);
+}
+
+/* =====================
+   OVERLAY
+   ===================== */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 1000;
+}
+.modal-overlay.active {
+  display: block;
+}
+
+/* =====================
+   MODAL
+   ===================== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 520px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #141414;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  z-index: 1001;
+}
+.modal.active {
+  display: block;
+  animation: modalSlideUp 0.25s ease forwards;
+}
+@keyframes modalSlideUp {
+  from { opacity: 0; transform: translate(-50%, -46%); }
+  to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* CLOSE BUTTON */
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.modal-close:hover { color: #fff; }
+
+/* MODAL HEADER */
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.modal-icon img {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.modal-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* MODAL DESCRIPTION */
+.modal-desc {
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* COMING SOON */
+.modal-coming-soon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 0 8px;
+  color: rgba(255,255,255,0.35);
+  text-align: center;
+}
+.modal-coming-soon p {
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+/* =====================
+   ACORDEÓN
+   ===================== */
+.accordion {
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.04);
+  border: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+.accordion-btn:hover { background: rgba(255,255,255,0.08); }
+.accordion-chevron {
+  flex-shrink: 0;
+  transition: transform 0.25s;
+  opacity: 0.6;
+}
+.accordion.open .accordion-chevron { transform: rotate(180deg); }
+.accordion-content {
+  display: none;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.02);
+}
+.accordion.open .accordion-content { display: block; }
+.accordion-content ol {
+  margin: 0;
+  padding-left: 20px;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+/* =====================
+   BOTÓN DESCARGAR APK
+   ===================== */
+.btn-download-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+.btn-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px 0;
+  background: #3DDC84;
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  box-sizing: border-box;
+}
+.btn-download-group .btn-download {
+  margin-top: 0;
+}
+.btn-download:hover {
+  background: #2ec870;
+  transform: translateY(-1px);
+}
+.btn-download-secondary {
+  background: rgba(61,220,132,0.15);
+  color: #3DDC84;
+  border: 1px solid rgba(61,220,132,0.4);
+}
+.btn-download-secondary:hover {
+  background: rgba(61,220,132,0.25);
+  transform: translateY(-1px);
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .modal {
+    width: 95%;
+    padding: 24px 18px 22px;
+    max-height: 90vh;
+  }
+}
