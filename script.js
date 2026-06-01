@@ -167,3 +167,59 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 reveals.forEach(el => observer.observe(el));
+
+// =====================
+// MODALES DE APPS
+// =====================
+(function () {
+  const overlay = document.getElementById('modal-overlay');
+
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    modal.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeAll() {
+    document.querySelectorAll('.modal.active').forEach(m => m.classList.remove('active'));
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Open modal on "Ver más" click
+  document.querySelectorAll('.btn-ver-mas').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.modal));
+  });
+
+  // Close on X button
+  document.querySelectorAll('.modal-close').forEach(btn => {
+    btn.addEventListener('click', closeAll);
+  });
+
+  // Close on overlay click
+  overlay.addEventListener('click', closeAll);
+
+  // Close on Escape key
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeAll();
+  });
+
+  // =====================
+  // ACORDEÓN
+  // =====================
+  document.querySelectorAll('.accordion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const accordion = btn.closest('.accordion');
+      const isOpen = accordion.classList.contains('open');
+
+      // Close all accordions in the same modal
+      const modal = btn.closest('.modal');
+      modal.querySelectorAll('.accordion').forEach(a => a.classList.remove('open'));
+
+      // Open this one if it was closed
+      if (!isOpen) accordion.classList.add('open');
+    });
+  });
+})();
