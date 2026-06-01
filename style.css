@@ -423,9 +423,14 @@ body {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 80px;
-  background: linear-gradient(to top, var(--bg), var(--bg-dark));
+  height: 40px;
+  background: linear-gradient(to top, var(--bg), transparent);
   pointer-events: none;
+  z-index: 0;
+}
+.section-dark .container {
+  position: relative;
+  z-index: 1;
 }
 .section-contact {
   background: linear-gradient(180deg, var(--bg) 0%, rgba(27,58,107,0.2) 50%, var(--bg) 100%);
