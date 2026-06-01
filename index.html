@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FREEZIP — Soluciones Digitales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.png" alt="FREEZIP Logo" width="40" height="40" style="border-radius:50%;object-fit:cover;"/>
+        <span>FREEZIP</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#apps" class="nav-tag nav-tag-android">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M17.523 15.341a.762.762 0 1 1 0-1.524.762.762 0 0 1 0 1.524zm-11.046 0a.762.762 0 1 1 0-1.524.762.762 0 0 1 0 1.524zM17.78 9.04l1.44-2.494a.3.3 0 0 0-.52-.3l-1.46 2.527A9.048 9.048 0 0 0 12 7.91a9.048 9.048 0 0 0-5.24 1.863L5.3 7.246a.3.3 0 0 0-.52.3L6.22 9.04A8.614 8.614 0 0 0 2.4 16h19.2a8.614 8.614 0 0 0-3.82-6.96z"/></svg>
+          Apps
+        </a></li>
+        <li><a href="#servicios" class="nav-tag nav-tag-pro">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          Servicios
+        </a></li>
+        <li><a href="#sobre-mi" class="nav-tag nav-tag-about">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Nosotros
+        </a></li>
+        <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="particles-canvas"></canvas>
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-logo-wrap">
+        <span class="ring-pulse"></span>
+        <span class="ring-pulse"></span>
+        <span class="ring-pulse"></span>
+        <span class="ring-rotate"></span>
+        <span class="ring-rotate-2"></span>
+        <img src="logo.png" alt="FREEZIP Logo" class="hero-logo-svg"/>
+      </div>
+      <div class="hero-brand-wrap">
+        <span class="brand-free">FREE</span><span class="brand-zip">ZIP</span>
+      </div>
+      <p class="hero-tagline">Soluciones profesionales</p>
+      <div class="hero-btns">
+        <a href="#servicios" class="btn btn-primary">Servicios</a>
+        <a href="#apps" class="btn btn-primary">Ver Apps</a>
+        <a href="#contacto" class="btn btn-primary">Contactanos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPS -->
+  <section class="section" id="apps">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag section-tag-android">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" style="margin-right:6px;vertical-align:middle"><path d="M17.523 15.341a.762.762 0 1 1 0-1.524.762.762 0 0 1 0 1.524zm-11.046 0a.762.762 0 1 1 0-1.524.762.762 0 0 1 0 1.524zM17.78 9.04l1.44-2.494a.3.3 0 0 0-.52-.3l-1.46 2.527A9.048 9.048 0 0 0 12 7.91a9.048 9.048 0 0 0-5.24 1.863L5.3 7.246a.3.3 0 0 0-.52.3L6.22 9.04A8.614 8.614 0 0 0 2.4 16h19.2a8.614 8.614 0 0 0-3.82-6.96z"/></svg>
+          Android
+        </span>
+        <h2>Nuestras Apps</h2>
+        <p>Aplicaciones desarrolladas para simplificar tu día a día</p>
+      </div>
+      <div class="apps-grid">
+
+        <div class="card reveal">
+          <div class="card-icon card-icon-img">
+            <img src="logo_administracion.png" alt="SR"/>
+          </div>
+          <h3>SR</h3>
+          <p>Gestioná tu negocio de forma eficiente: clientes, inventario, reportes y más desde tu celular.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon card-icon-img">
+            <img src="logo_lunamoon.png" alt="Luna Moon" style="width:54px;height:54px;"/>
+          </div>
+          <h3>Luna Moon</h3>
+          <p>Contenido educativo y entretenido diseñado especialmente para los más chicos, de forma segura.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon card-icon-img">
+            <img src="logo_appvpn.png" alt="XYZ VPN"/>
+          </div>
+          <h3>XYZ VPN</h3>
+          <p>Navegá de forma privada y segura. Protegé tu conexión con un solo toque desde cualquier lugar.</p>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon card-icon-img">
+            <img src="logo_backup.png" alt="Swift Backup"/>
+          </div>
+          <h3>Swift Backup</h3>
+          <p>Respalda tus datos automáticamente en la nube. Recuperá tu información cuando más lo necesitás.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section section-dark" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag section-tag-pro">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" style="margin-right:6px;vertical-align:middle"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          Profesional
+        </span>
+        <h2>Servicios</h2>
+        <p>Soluciones técnicas con respaldo profesional de un Ingeniero en Sistemas</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M9 8l3 3 3-3"/></svg>
+          </div>
+          <h3>Soporte Técnico</h3>
+          <p>Reparación y mantenimiento de hardware y software. PCs, notebooks, impresoras, instalación de sistemas operativos y programas.</p>
+          <ul class="service-list">
+            <li>Reparación de hardware</li>
+            <li>Instalación de software</li>
+            <li>Mantenimiento preventivo</li>
+            <li>Formateo y recuperación de datos</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          </div>
+          <h3>Cámaras de Seguridad</h3>
+          <p>Instalación y configuración de sistemas de videovigilancia para hogares, comercios y empresas. Visualización remota desde el celular.</p>
+          <ul class="service-list">
+            <li>Instalación IP y analógica</li>
+            <li>Configuración remota</li>
+            <li>DVR / NVR</li>
+            <li>Asesoramiento personalizado</li>
+          </ul>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Alarmas</h3>
+          <p>Instalación de sistemas de alarma para proteger tu hogar o negocio. Con zonas, sensores y control desde tu smartphone.</p>
+          <ul class="service-list">
+            <li>Alarmas perimetrales</li>
+            <li>Sensores de movimiento</li>
+            <li>Control por app</li>
+            <li>Integración con cámaras</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <div class="about-wrap reveal">
+        <div class="about-left">
+          <div class="about-avatar">
+            <img src="logo.png" alt="FREEZIP" style="width:80px;height:80px;border-radius:50%;object-fit:cover;"/>
+          </div>
+          <div class="about-trust-badges">
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3DDC84" stroke-width="2" width="16" height="16"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Formación universitaria
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3DDC84" stroke-width="2" width="16" height="16"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Respuesta en menos de 24hs
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3DDC84" stroke-width="2" width="16" height="16"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Garantía en cada servicio
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3DDC84" stroke-width="2" width="16" height="16"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Atención personalizada
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag section-tag-about">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" style="margin-right:6px;vertical-align:middle"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Quiénes somos
+          </span>
+          <h2>Tu problema es único. Tu solución también.</h2>
+          <p>Soy Fernando Zaya, Ingeniero en Sistemas y fundador de FREEZIP. Cada solución que desarrollo lleva el respaldo de formación profesional y años de experiencia en el campo — no somos una agencia genérica, somos una persona real que se hace cargo de cada proyecto de principio a fin.</p>
+          <p>Desde apps Android hasta instalaciones de seguridad, trabajo con una sola premisa: <strong>que el cliente quede satisfecho y que la solución realmente funcione.</strong></p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Apps en producción</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Servicios técnicos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Dedicación</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section-contact" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag section-tag-contact">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="13" height="13" style="margin-right:6px;vertical-align:middle"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Hablemos
+        </span>
+        <h2>Contacto</h2>
+        <p>¿Tenés una consulta o necesitás un servicio? Escribinos, te respondemos rápido.</p>
+      </div>
+      <div class="contact-btns reveal">
+        <a href="https://wa.me/543525479678" target="_blank" class="contact-btn whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://www.facebook.com/freezipOK" target="_blank" class="contact-btn facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="mailto:zayafernando90@gmail.com" class="contact-btn email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Enviar Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="footer-logo">
+          <img src="logo.png" alt="FREEZIP Logo" width="36" height="36" style="border-radius:50%;object-fit:cover;"/>
+          <span>FREEZIP</span>
+        </a>
+        <p class="footer-copy">© 2026 FREEZIP. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
