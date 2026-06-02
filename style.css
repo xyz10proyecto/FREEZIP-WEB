@@ -1098,7 +1098,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 20px;
   width: 100%;
   padding: 14px 0;
   background: #3DDC84;
@@ -1113,6 +1112,9 @@ body {
 }
 .btn-download-group .btn-download {
   margin-top: 0;
+}
+.modal > .btn-download {
+  margin-top: 20px;
 }
 .btn-download:hover {
   background: #2ec870;

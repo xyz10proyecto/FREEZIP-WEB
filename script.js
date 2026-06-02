@@ -216,10 +216,16 @@ reveals.forEach(el => observer.observe(el));
 
       // Close all accordions in the same modal
       const modal = btn.closest('.modal');
-      modal.querySelectorAll('.accordion').forEach(a => a.classList.remove('open'));
+      modal.querySelectorAll('.accordion').forEach(a => {
+        a.classList.remove('open');
+        a.querySelector('.accordion-btn').setAttribute('aria-expanded', 'false');
+      });
 
       // Open this one if it was closed
-      if (!isOpen) accordion.classList.add('open');
+      if (!isOpen) {
+        accordion.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
   });
 })();
