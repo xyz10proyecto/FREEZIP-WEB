@@ -1157,6 +1157,12 @@ body {
   color: rgba(255,255,255,0.6);
   font-size: 0.85rem;
 }
+.modal-version {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.4);
+  vertical-align: middle;
+}
 
 /* MOBILE */
 @media (max-width: 480px) {
